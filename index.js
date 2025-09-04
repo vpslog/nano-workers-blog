@@ -5,13 +5,6 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    // API 示例
-    if (url.pathname.startsWith("/api/")) {
-      return new Response(JSON.stringify({ ok: true }), {
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-
     // 首页：动态读取 posts.json
     if (url.pathname === "/") {
       const res = await env.ASSETS.fetch(new Request("/posts.json"));
