@@ -2,7 +2,7 @@ import matter from "gray-matter";
 import { marked } from "marked";
 
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request, env) {
     const url = new URL(request.url);
 
     // 首页：动态读取 posts.json

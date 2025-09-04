@@ -1,5 +1,5 @@
 name = "nano-workers-blog"
-main = "index.js"
+main = "./index.js"
 compatibility_date = "2025-01-01"
 
 [assets]
