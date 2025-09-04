@@ -1,0 +1,10 @@
+{
+  "name": "nano-workers-blog",
+  "assets": {
+    "directory": "./public"
+  },
+  "compatibility_date":"2025-09-05",
+  "build": {
+    "command": "node build.js"
+  }
+}
