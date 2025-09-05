@@ -48,7 +48,7 @@ posts.sort((a, b) => (b.date || "") > (a.date || "") ? 1 : -1);
 
 // 生成首页 html
 const listHtml = posts.map(
-  (p) => `<li><a href="/post/${p.slug}.html">${p.title}</a> (${formatDate(post.data.date)})</li>`
+  (p) => `<li><a href="/post/${p.slug}.html">${p.title}</a> (${formatDate(p.data.date)})</li>`
 ).join("");
 const indexHtml = render(TEMPLATE, {
   title: NAME,
